@@ -1,0 +1,13 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: go get -v -t -d ./... 
+  - command: go install -v golang.org/x/tools/cmd/goimports@latest
+
+vscode:
+  extensions:
+    - eamodio.gitlens
+    - vivaxy.vscode-conventional-commits
+    - DavidAnson.vscode-markdownlint
+    - aaron-bond.better-comments
+    - wayou.vscode-todo-highlight
